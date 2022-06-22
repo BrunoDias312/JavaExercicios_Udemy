@@ -2,6 +2,7 @@ package classe;
 
 import classe.Data.Data;
 
+//nulo arquivo
 public class ValorNulo {
     public static void main(String[] args) {
         String s1 = "";
