@@ -3,7 +3,7 @@ package classe;
 import classe.Data.Data;
 
 //nulo games
-//222234
+//fuck you
 public class ValorNulo {
     public static void main(String[] args) {
         String s1 = "";
