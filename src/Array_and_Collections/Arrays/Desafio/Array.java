@@ -2,6 +2,7 @@ package Array_and_Collections.Arrays.Desafio;
 
 import java.util.Scanner;
 
+
 public class Array {
 
     int quantidadeNotas;
@@ -16,7 +17,7 @@ public class Array {
 
         System.out.print("Quantidade de notas: ");
         int quantidadeNotas = entrada.nextInt();//Quantidade de notas a ser inserida
-        Array p = new Array(quantidadeNotas);
+        new Array(quantidadeNotas);
 
         double[] notasAlunos = new double[quantidadeNotas];//colocar no array a quantidade de notas a ser inseridas
 
@@ -26,10 +27,13 @@ public class Array {
 
             notasAlunos[i] = nota;//Colocar as notas no array
         }
-
+        double totalNotas = 0;
         for (double notasAluno : notasAlunos) {//Mostrar as notas do aluno
-            System.out.println(notasAluno);
+            totalNotas += notasAluno;
         }
+
+        System.out.printf("A media de notas do aluno é %.2f" , totalNotas/notasAlunos.length);
+
 
     }
 
